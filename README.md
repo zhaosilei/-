@@ -1,81 +1,61 @@
 # -
 gjhmj
-package Bank;
-interface Yinlian
-{
-    int password();
-    int getMonny();
-    int balance();
-}
+package Test01;
 
-public class Bank 
+public class People 
 {
-    class ICBC implements Yinlian
+    private String name;
+    private int age; 
+    private char sex;
+    private float weight;
+    public void SetName(String n)
     {
-
-        @Override
-        public int password() {
-            // TODO Auto-generated method stub
-            return 0;
-        }
-
-        @Override
-        public int getMonny() {
-            // TODO Auto-generated method stub
-            return 0;
-        }
-
-        @Override
-        public int balance() {
-            // TODO Auto-generated method stub
-            return 0;
-        }
-        public int Online()
-        {
-            return 0;
-        }
-        class ABC implements Yinlian
-        {
-
-            @Override
-            public int password() {
-                // TODO Auto-generated method stub
-                return 0;
-            }
-
-            @Override
-            public int getMonny() {
-                // TODO Auto-generated method stub
-                return 0;
-            }
-
-            @Override
-            public int balance() {
-                // TODO Auto-generated method stub
-                
-                return 0;
-            }
-            public int telBill(){
-                return 0;
-            }
-             public int leftMoney(int money)
-             {
-                 if(money>-2000)
-                     return money;
-                 else
-                     return -2001;
-             }
-            
-        }
+        name=n;
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public void setAge(int a)
+    {
+        age=a;
+    }
+    public int getAge()
+    {
+        return age;
+    }
+    public void setSex(char s)
+    {
+        sex=s;
+    }
+    public char getSex()
+    {
+        return sex;
         
     }
-
-
-
-    public static void main(String[] args) 
+    public void setWeight(float w )
     {
+        weight=w;
+    }
+    public float getWeight()
+    {
+        return weight;
+    }
+    public People(){}
+    public People(String name)
+    {
+        name="Tom";
+    }
+    public People(String name,int age,char sex,float weight){}
+    public void printInfo()
+    {
+        People p=new People();
+        System.out.println("姓名"+p.name+"年龄"+p.age+"性别"+p.sex+"体重"+p.weight);
+    }
+    public static void main(String[] args) {
         // TODO Auto-generated method stub
 
     }
 
 }
+
